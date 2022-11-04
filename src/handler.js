@@ -75,6 +75,7 @@ const createBooksHandler = (request, h) => {
 const readAllBooksHandler = (request, h) => {
 	const {name, reading, finished } = request.query;
 
+	
 	if (!reading &&!finished &!name) {
 		const response = h.response({
 			status: "success",
